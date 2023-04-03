@@ -20,7 +20,9 @@
 html {scroll-behavior: smooth;}
 body {color:#111; position: relative; font-family: 'SUIT-Regular', sans-serif; background-color: #E0DFDA; overflow-x: hidden;}
 a {color: #111; font-size:inherit; font-style:inherit; font-weight:inherit; text-decoration:none; cursor: pointer;}
+p, span, div {cursor: default;}
 button {font-size:inherit; text-align: center; border: none; outline: none;}
+button:active {transform: translateY(1px);}
 ol, ul {list-style: none;}
 ::selection {background-color: #F56D77; color: #fff;}
 ::-webkit-scrollbar{width: 5px;}
