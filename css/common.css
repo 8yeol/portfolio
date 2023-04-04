@@ -50,7 +50,7 @@
 .half-37 > div:first-child {width: 30%;}
 .half-37 > div:last-child {width: 70%;}
 
-header {z-index: 9; cursor: default; position: relative; }
+header {z-index: 9; position: relative; }
 header .top {width: 97vw; height: 80px; background-color: #E0DFDA; position: fixed; top: 0; right: 0; padding: 0px 80px 0px 40px;}
 header .side {width: 3vw; height: 100vh; background-color: #E0DFDA; position: fixed; top: 0; left: 0; justify-content: space-between;}
 header .side > p {width: 140px; transform: rotate(-90deg); position: relative; top: 65px}
@@ -81,6 +81,6 @@ section > div {height: 100%;}
 .idBox > img {width: 70%; margin-top: 20px}
 .idBox::after {content: ''; display: block; width: 7px; height: 7px; background-color: #111; border-radius: 50%; position: absolute; bottom: -20px; right: -3.25px}
 .infoBox {padding: 80px; justify-content: flex-end; align-items: flex-start;}
-.infoWrap:nth-child(3) {margin-top: 100px;}
+.infoWrap:nth-child(3) {margin-top: 80px;}
 .infoWrap > div {padding-left: 10px; border-left: 1px solid #111}
 .infoWrap:last-child > div > p > span {display: inline-block; width: 55px}
