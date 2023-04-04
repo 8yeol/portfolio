@@ -8,6 +8,7 @@
 .txt_s{ font-size:.925rem}
 .txt_tlt{font-size:1.125rem}
 .txt_lg{font-size:1.25rem}
+.txt_xl {font-size: 2.5rem;}
 .txt_impact{font-size:4rem}
 .t_bold{font-weight:400; }
 .t_bold2{font-weight:600; }
@@ -46,9 +47,11 @@
 .border-l {border-left: 1px solid #111;}
 .border-r {border-right: 1px solid #111;}
 
-.half-37 {display: flex;}
+.half-37, .half-64 {display: flex;}
 .half-37 > div:first-child {width: 30%;}
 .half-37 > div:last-child {width: 70%;}
+.half-64 > div:first-child {width: 60%;}
+.half-64 > div:last-child {width: 40%;}
 
 header {z-index: 9; position: relative; }
 header .top {width: 97vw; height: 80px; background-color: #E0DFDA; position: fixed; top: 0; right: 0; padding: 0px 80px 0px 40px;}
@@ -66,7 +69,7 @@ section > div {height: 100%;}
 
 .imgBox {background: url(../images/bg-marble.jpg) no-repeat center / cover; justify-content: flex-end; padding: 80px 40px 40px 0px;}
 .imgBox > p {text-decoration: underline 3px solid #111; text-underline-offset : 10px;}
-.textBox {padding-top: 80px}
+.textBox {padding-top: 80px; position: relative;}
 .textBox > .nameText {height: 40%; position: relative;}
 .textBox > .nameText > p {-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #111; color: transparent; font-size: 7rem; font-weight: 900;}
 .ownlight {position: absolute; top: 47%; left: 50%; display: inline-block; width: 350px; transform: translateX(-50%)}
@@ -80,7 +83,17 @@ section > div {height: 100%;}
 .idBox {height: 95%; padding: 80px 40px 0px 0px; flex-direction: column; justify-content: flex-end; position: relative}
 .idBox > img {width: 70%; margin-top: 20px}
 .idBox::after {content: ''; display: block; width: 7px; height: 7px; background-color: #111; border-radius: 50%; position: absolute; bottom: -20px; right: -3.25px}
-.infoBox {padding: 80px; justify-content: flex-end; align-items: flex-start;}
+.infoBox {padding: 80px; justify-content: flex-end; align-items: flex-start; position: relative;}
 .infoWrap:nth-child(3) {margin-top: 80px;}
 .infoWrap > div {padding-left: 10px; border-left: 1px solid #111}
 .infoWrap:last-child > div > p > span {display: inline-block; width: 55px}
+.scrollTxt {position: absolute; right: 60px; bottom: 40px; animation: upDown 2s infinite;}
+.scrollTxt::after {content: ''; width: 120px; height: 1px; background-color: #111; display: block;}
+@keyframes upDown {
+    0% {transform: translateY(15px) rotate(90deg);}
+    50% {transform: translateY(0px) rotate(90deg);}
+    100% {transform: translateY(15px) rotate(90deg);}
+}
+
+
+#web > div > div {padding: 160px 40px 0px 140px;}
