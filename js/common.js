@@ -11,4 +11,8 @@ $(document).ready(function () {
         $("html, body").animate({scrollTop: 0}, 400);
         return false;
     });
+  
+  $('.link').hover(function () {
+    $('.cursor').toggleClass('active');
+  });
 })
