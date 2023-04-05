@@ -8,7 +8,7 @@
 .txt_s{ font-size:.925rem}
 .txt_tlt{font-size:1.125rem}
 .txt_lg{font-size:1.25rem}
-.txt_xl {font-size: 2.5rem;}
+.txt_xl {font-size: 2.25rem;}
 .txt_impact{font-size:4rem}
 .t_bold{font-weight:400; }
 .t_bold2{font-weight:600; }
@@ -95,5 +95,7 @@ section > div {height: 100%;}
     100% {transform: translateY(15px) rotate(90deg);}
 }
 
+.client {display: flex; justify-content: flex-start; align-items: center;}
+.clientLogo {height: 35px; margin-right: 5px;}
 
 #web > div > div {padding: 160px 40px 0px 140px;}
