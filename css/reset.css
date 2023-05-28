@@ -16,11 +16,10 @@
     font-family: 'SUIT-Regular';
 }
 
-*, :after, :before {margin: 0; padding: 0; box-sizing: border-box;}
+*, :after, :before {margin: 0; padding: 0; box-sizing: border-box; cursor: none !important}
 html {scroll-behavior: smooth;}
-body {color:#111; position: relative; font-family: 'SUIT-Regular', sans-serif; background-color: #E0DFDA; overflow-x: hidden;}
-a {color: #111; font-size:inherit; font-style:inherit; font-weight:inherit; text-decoration:none; cursor: pointer;}
-p, span, div {cursor: default;}
+body {color:#111; position: relative; font-family: 'SUIT-Regular', sans-serif; font-size: 16px; background-color: #E0DFDA; overflow-x: hidden; cursor: none !important;}
+a {color: #111; font-size:inherit; font-style:inherit; font-weight:inherit; text-decoration:none;}
 button {font-size:inherit; text-align: center; border: none; outline: none;}
 button:active {transform: translateY(1px);}
 ol, ul {list-style: none;}
@@ -28,3 +27,6 @@ ol, ul {list-style: none;}
 ::-webkit-scrollbar{width: 5px;}
 ::-webkit-scrollbar-track {background-color: #E7E7E7;}
 ::-webkit-scrollbar-thumb {background-color: #7E7E7E;} 
+
+.cursor {width: 50px; height: 50px; border: 1px solid #f56d77; border-radius: 50%; position: fixed; z-index: 9999; transform: translate(-50%,-50%); pointer-events: none; transition: transform .2s; transform-origin: 100% 100%; backdrop-filter: blur(3px); background-size: cover;}
+.cursor.active {transform: scale(2); }
