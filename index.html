@@ -14,6 +14,7 @@
     <script src="js/common.js"></script>
 </head>
 <body>
+    <div class="cursor"></div>
     <header class="border-b">
          <div class="top flex-between border-b">
             <h1 class="f_nn">PORTFOLIO</h1>
@@ -22,10 +23,10 @@
 
          <div class="side flex-column border-r">
             <p class="txt_ss">나도 나만의 빛을 낼래</p>
-            <a href="mailto:hire00star@gmail.com" class="dib">CONTACT</a>
+            <a href="mailto:hire00star@gmail.com" class="dib link">CONTACT</a>
          </div>
 
-         <button type="button" class="topBtn"><span class="arrow"></span></button>
+         <button type="button" class="topBtn link"><span class="arrow"></span></button>
     </header>
 
     <section class="border-b">
@@ -43,13 +44,13 @@
                 </div>
                 <div>
                     <div class="flex-between border-b">
-                        <p class="txt_impact ml-4 web">WEB</p>
-                        <p class="txt_impact t_right">UI<br>UX</p>
+                        <p class="txt_impact ml-4 web link"><a href="#web">WEB</a></p>
+                        <p class="txt_impact t_right link">UI<br>UX</p>
                     </div>
                     <div class="flex-between">
-                        <p class="txt_impact">DOCUMENTS</p>
+                        <p class="txt_impact link">DOCUMENTS</p>
                         <p class="txt_impact ml-4">·</p>
-                        <p class="txt_impact">etc.</p>
+                        <p class="txt_impact link">etc.</p>
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@
 
             <div class="infoBox flex-column">
                 <p class="name c_primary f_nn txt_impact mt-5">LEE HANBYEOL.</p>
-                <p class="contactTxt f_nn txt_lg t_bold2">hire00star@gmial.com · 010-6313-3913</p>
+                <p class="contactTxt f_nn txt_lg t_bold2"><a href="mailto:hire00star@gmail.com" class="link">hire00star@gmail.com</a> · <a href="tel:010-6313-3913" class="link">010-6313-3913</a></p>
 
                 <div class="infoWrap">
                     <p class="f_nn txt_lg t_bold2">EDUCATION</p>
@@ -114,7 +115,7 @@
                         </p>
                         <p class="mt-05">
                             <span class="c_grey mr-1">Comm</span>
-                            Figma / Jira
+                            Figma / JIRA
                         </p>
                         <p class="mt-05">
                             <span class="c_grey mr-1">Dev</span>
@@ -122,8 +123,35 @@
                         </p>
                     </div>
                 </div>
+                
+                <span class="scrollTxt txt_ss">SCROLL DOWN</span>
             </div>
         </div>
     </section>
+    <!-- <section id="web" class="border-t">
+        <div class="half-64">
+            <div class="border-r">
+                <p class="txt_tlt">
+                    Dashboard <br>
+                    <span class="txt_xl client"><img src="images/LXhausys.png" alt="LX하우시스 로고" class="clientLogo"> | TMS 대기 관제 시스템</span>
+                </p>
+            </div>
+            <div></div>
+        </div>
+    </section> -->
 </body>
 </html>
+
+<script>
+    document.body.style.cursor = 'none';
+
+    let mouseCursor = document.querySelector(".cursor");
+  //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+  window.addEventListener("scroll", cursor);
+  window.addEventListener("mousemove", cursor);
+  //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+  function cursor(e) {
+    mouseCursor.style.left = e.pageX + "px";
+    mouseCursor.style.top = e.pageY - scrollY + "px";
+    }
+</script>
