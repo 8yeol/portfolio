@@ -23,6 +23,7 @@ a {color: #111; font-size:inherit; font-style:inherit; font-weight:inherit; text
 button {font-size:inherit; text-align: center; border: none; outline: none;}
 button:active {transform: translateY(1px);}
 ol, ul {list-style: none;}
+p {word-break: keep-all;}
 ::selection {background-color: #F56D77; color: #fff;}
 ::-webkit-scrollbar{width: 5px;}
 ::-webkit-scrollbar-track {background-color: #E7E7E7;}
@@ -30,3 +31,8 @@ ol, ul {list-style: none;}
 
 .cursor {width: 50px; height: 50px; border: 1px solid #f56d77; border-radius: 50%; position: fixed; z-index: 9999; transform: translate(-50%,-50%); pointer-events: none; transition: transform .2s; transform-origin: 100% 100%; backdrop-filter: blur(3px); background-size: cover;}
 .cursor.active {transform: scale(2); }
+
+button:not(.topBtn) { padding: 5px 10px; border-radius: 2px; background-color: #F56D77; border: none; color: #FFF; z-index: 1; transition: all 0.3s ease; position: relative; display: inline-block; }
+button:not(.topBtn):after { position: absolute; content: ""; width: 0; height: 100%; top: 0; right: 0; z-index: -1; background-color: #f04550; border-radius: 2px; transition: all 0.3s ease; }
+button:not(.topBtn):hover:after { left: 0; width: 100%; }
+button:not(.topBtn):active { top: 1px }

@@ -8,7 +8,8 @@
 .txt_s{ font-size:.925rem}
 .txt_tlt{font-size:1.125rem}
 .txt_lg{font-size:1.25rem}
-.txt_xl {font-size: 2.25rem;}
+.txt_xl {font-size: 2rem;}
+.txt_xxl {font-size: 2.25rem;}
 .txt_impact{font-size:4rem}
 .t_bold{font-weight:400; }
 .t_bold2{font-weight:600; }
@@ -24,12 +25,14 @@
 .mt-3{margin-top:30px !important; }
 .mt-4{margin-top:40px !important; }
 .mt-5{margin-top:50px !important; }
+.mt-6{margin-top:60px !important; }
 .ml-1{margin-left:10px !important; }
 .ml-2{margin-left:20px !important; }
 .ml-3{margin-left:30px !important; }
 .ml-4{margin-left:40px !important; }
 .ml-5{margin-left:50px !important; }
 .mr-1{margin-right: 10px !important;}
+.mr-25{margin-right: 25px !important;}
 .mb-1{margin-bottom: 10px !important;}
 
 .dib{display:inline-block;}
@@ -47,11 +50,12 @@
 .border-l {border-left: 1px solid #111;}
 .border-r {border-right: 1px solid #111;}
 
-.half-37, .half-64 {display: flex;}
+.half-37, .half-64, .half-50 {display: flex;}
 .half-37 > div:first-child {width: 30%;}
 .half-37 > div:last-child {width: 70%;}
 .half-64 > div:first-child {width: 60%;}
 .half-64 > div:last-child {width: 40%;}
+.half-50 > div {width: 50%;}
 
 header {z-index: 9; position: relative; }
 header .top {width: 97vw; height: 80px; background-color: #E0DFDA; position: fixed; top: 0; right: 0; padding: 0px 80px 0px 40px;}
@@ -96,6 +100,9 @@ section > div {height: 100%;}
 }
 
 .client {display: flex; justify-content: flex-start; align-items: center;}
-.clientLogo {height: 35px; margin-right: 5px;}
+.clientLogo {height: 25px; margin-right: 5px;}
 
-#web > div > div {padding: 160px 40px 0px 140px;}
+.leftBox {padding: 160px 60px 0px 120px;}
+.rightBox {padding: 160px 60px 0px 60px;}
+
+.workImg { width: 100% }
