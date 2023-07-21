@@ -116,4 +116,6 @@ section > div {height: 100%;}
 .contestText { line-height: 1.5rem; }
 .uiuxImg { width: 100%; position: relative; top: calc(100% - 80px); transform: translateY(-100%); }
 
-.busiCard > img { width: 30%; }
+.busiCard > div { width: 30%; }
+.busiCard > div > img { width: 100% }
+.busiCard > div > span { display: inline-block }
